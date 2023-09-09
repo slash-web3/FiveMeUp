@@ -1277,9 +1277,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .started .gradient {
@@ -1316,6 +1313,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-left: 7rem;
 }
 
 .information-started__title {
@@ -1646,12 +1644,8 @@ body {
     padding-bottom: 7.6875rem;
   }
 
-  .information-started {
+  .started__content {
     padding-top: 6rem;
-  }
-
-  .information-started {
-    padding-bottom: 6rem;
   }
 
   .information-started__title {
@@ -1688,12 +1682,6 @@ body {
 
   .button-started {
     padding-right: 1.5rem;
-  }
-}
-
-@media (min-width: 119.81125em) {
-  .information-started {
-    padding-left: 7rem;
   }
 }
 
@@ -1946,16 +1934,8 @@ body {
     padding-bottom: 3.75rem;
   }
 
-  .information-started {
+  .started__content {
     padding-top: 2.25rem;
-  }
-
-  .information-started {
-    padding-bottom: 2.25rem;
-  }
-
-  .information-started {
-    padding-left: 0.0000000625rem;
   }
 
   .information-started__title {
@@ -2028,6 +2008,12 @@ body {
 
   .info-block {
     max-width: 24.375rem;
+  }
+}
+
+@media (max-width: 61.31125em) {
+  .information-started {
+    padding-left: 3.75rem;
   }
 }
 
@@ -2229,6 +2215,10 @@ body {
   .element-instant:nth-child(2) {
     border: none;
   }
+
+  .information-started {
+    padding-left: 1.875rem;
+  }
 }
 
 @media (max-width: 45.68625em) {
@@ -2254,7 +2244,6 @@ body {
   }
 
   .information-started__title {
-    max-width: 100%;
     text-align: center;
   }
 
@@ -2263,16 +2252,13 @@ body {
         -ms-flex-align: center;
             align-items: center;
     padding: 0rem 0.9375rem;
+    padding: 0;
   }
 }
 
 @media (max-width: 45.68625em) and (max-width: 20em) {
   .started__image {
     top: 1.5625rem;
-  }
-
-  .information-started__title {
-    padding-top: 1.875rem;
   }
 }
 
@@ -3126,26 +3112,14 @@ body {
 }
 
 @supports (padding-top: clamp( 2.25rem , 1.2065217391rem  +  5.2173913043vw , 6rem )) {
-    .information-started {
+    .started__content {
       padding-top: clamp( 2.25rem , 1.2065217391rem  +  5.2173913043vw , 6rem );
     }
 }
 
 @supports not (padding-top: clamp( 2.25rem , 1.2065217391rem  +  5.2173913043vw , 6rem )) {
-    .information-started {
+    .started__content {
       padding-top: calc(2.25rem + 3.75 * (100vw - 20rem) / 71.875);
-    }
-}
-
-@supports (padding-bottom: clamp( 2.25rem , 1.2065217391rem  +  5.2173913043vw , 6rem )) {
-    .information-started {
-      padding-bottom: clamp( 2.25rem , 1.2065217391rem  +  5.2173913043vw , 6rem );
-    }
-}
-
-@supports not (padding-bottom: clamp( 2.25rem , 1.2065217391rem  +  5.2173913043vw , 6rem )) {
-    .information-started {
-      padding-bottom: calc(2.25rem + 3.75 * (100vw - 20rem) / 71.875);
     }
 }
 
@@ -3428,10 +3402,6 @@ body {
   .started__image {
     top: 2.8125rem;
   }
-
-  .information-started__title {
-    padding-top: 7.625rem;
-  }
 }
 
 @media (max-width: 45.68625em) and (min-width: 20em) and (max-width: 91.875em) {
@@ -3444,32 +3414,6 @@ body {
 @supports not (top: clamp( 1.5625rem , 1.214673913rem  +  1.7391304348vw , 2.8125rem )) {
     .started__image {
       top: calc(1.5625rem + 1.25 * (100vw - 20rem) / 71.875);
-    }
-}
-
-@supports (padding-top: clamp( 1.875rem , 0.275rem  +  8vw , 7.625rem )) {
-    .information-started__title {
-      padding-top: clamp( 1.875rem , 0.275rem  +  8vw , 7.625rem );
-    }
-}
-
-@supports not (padding-top: clamp( 1.875rem , 0.275rem  +  8vw , 7.625rem )) {
-    .information-started__title {
-      padding-top: calc(1.875rem + 5.75 * (100vw - 20rem) / 71.875);
-    }
-}
-}
-
-@media (min-width: 20em) and (max-width: 119.81125em) {
-@supports (padding-left: clamp( 0.0000000625rem , -1.4026474221rem  +  7.0132374231vw , 7rem )) {
-    .information-started {
-      padding-left: clamp( 0.0000000625rem , -1.4026474221rem  +  7.0132374231vw , 7rem );
-    }
-}
-
-@supports not (padding-left: clamp( 0.0000000625rem , -1.4026474221rem  +  7.0132374231vw , 7rem )) {
-    .information-started {
-      padding-left: calc(0.0000000625rem + 6.9999999375 * (100vw - 20rem) / 99.81125);
     }
 }
 }
